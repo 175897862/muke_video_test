@@ -2,14 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b72971fc-39d3-430b-a2fc-45f9f9ac6689" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/app/client/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/client/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/views/video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/base_render.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/model/video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/permission.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/externa_video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/css/video_sub.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/dashboard/js/video/externa_video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/auth/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/video/externa_video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/dashboard/video/video_sub.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,6 +59,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />

@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#base-area{
+    width: 100%;
+    position: relative;  /* 相对定位 */
+    height: 100%;
+}
+
+.navbar{
+    margin-bottom: 0;  /* 没有此定义，将在窗口上下端间产生一个20px的间隔区域 */
+}
+
+.side-menu{
+    height:100%;
+    width:12%;
+    position: absolute;  /* 相对父集（这里是base-area）的绝对定位 */
+    left:0;
+    top:0;
+    /* background: green; */  /* 增加一个颜色以确定是否定位好 */
+    list-style: none;  /* 禁用列表样式 */
+    padding-left:0;  /* 如果没有这个定义，左边菜单的左边还预留有一部分空间 */
+}
+
+.side-menu > li{
+    text-align: center;  /* 居中 */
+    width: 100%;
+    line-height:32px;  /* 行高 */
+    cursor: pointer;  /* 当鼠标获取时指针变小手 */
+    border: 1px solid #cccccc;  /* 添加边宽1像素的灰色边框 */
+}
+
+.base-content {
+    width: 88%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #cccccc;
+}
+
+h1 {
+    margin: 5%;  /* 上下左右预留5%的空间 */
+}

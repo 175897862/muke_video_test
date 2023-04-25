@@ -1,0 +1,40 @@
+<%inherit file="../base.html" />  <!--继承模板信息，注意相对路径的使用方法-->
+<%! from django.shortcuts import reverse %>  <!— 导入django中的reverse方法 -->
+<%def name="content()">  <!--继承content方法-->
+<%
+    prev_page = '{}?page={}'.format(reverse('admin_manager'), page_num - 1)
+    next_page = '{}?page={}'.format(reverse('admin_manager'), page_num + 1)
+%>
+<h1>管理员模块</h1>
+% if page_num > 1:
+<a href="${prev_page}">上一页</a>
+% endif
+% if page_num < total:
+|<a href="${next_page}">下一页</a>
+% endif
+<!--下面是一个table格式的表-->
+<table class="table">
+    <thead>  <!--表头部分，用tr标签，内容用th标签-->
+        <tr>
+            <th>用户名</th>
+            <th>是否管理员</th>
+            <th>创建时间</th>
+            <th>编辑</th>
+        </tr>
+    </thead>
+    <tbody>  <!--表的内容，也用tr标签，内容用td标签-->
+    % for user in users:
+        <tr>
+            <td>${user.username}</td>
+            <td>${user.is_superuser}</td>
+            <td>${user.date_joined}</td>
+            % if user.is_superuser:
+                <td><a href="${reverse('admin_update_status')}?status=off">注销管理员权限</a></td>
+            % else:
+                <td><a href="${reverse('admin_update_status')}?status=on">赋予管理员权限</a></td>
+            % endif
+        </tr>
+    % endfor
+    </tbody>
+</table>
+</%def>

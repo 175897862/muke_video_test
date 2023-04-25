@@ -1,0 +1,25 @@
+.open-btn {
+    margin-left: 20px;
+}
+.video-select{
+    width: 25%;
+    display: inline-block;  /* 默认为block形式，将与label分行显示，设为inline后可以为一行显示 */
+}
+.add-video-area{
+    width: 50%;
+    padding: 10px;  /* 上下左右内边距为10像素 */
+    border: 1px solid #cccccc;  /* 边框1像素灰色 */
+    margin-top: 10px;  /* 外上边距为10像素 */
+    margin-left: 20px;  /* 外左边距为20像素 */
+    border-radius: 8px;  /* 8像素圆角 */
+    display: none;   /*将窗口初始为隐藏状态，即不可见 */
+}
+.video-images{
+    width: 100px;    /* 定义显示图片的宽度为100像素 */
+}
+.info{
+    width: 100px;    /* 定义显示宽度为100像素 */
+    overflow: hidden;    /* 对超出内容进行裁剪，不出现滚动条 */
+    white-space: nowrap;    /* 不换行，文本强制在一行上显示 */
+    text-overflow: ellipsis;    /* 当对象内文本溢出时显示省略标记 */
+}

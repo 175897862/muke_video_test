@@ -1,0 +1,12 @@
+input, select {
+    width: 50% !important;  /* 因为form中也有css样式，如果不加!important样式不会生效 */
+    display: inline-block !important;  /* 加!important是使样式强制生效 */
+}
+.add-url {    /* 加一个外框 */
+    width: 50%;
+    padding: 10px;  /* 距外框边距10像素 */
+    border: 1px solid #cccccc;  /* 1像素灰色外框 */
+}
+#add-url-btn, #add-star-btn {
+    width:60px !important;
+}

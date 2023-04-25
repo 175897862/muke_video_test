@@ -1,0 +1,6 @@
+.edit-area {
+    width: 50%;
+    margin: 10% auto;  /* 上下间隔10%，左右自动（居中） */
+    border: 1px solid #cccccc;  /* 宽度为1像素的灰色边框 */
+    padding: 5%;  /* 上下左右间隔5% */
+}
